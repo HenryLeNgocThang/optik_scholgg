@@ -1,0 +1,12 @@
+﻿/* Imports */
+@import url("imports.css");
+
+@import url("float-grid.css");
+@import url("default-settings.css");
+
+/* Componens */
+@import url("componens/footer.css");
+@import url("componens/navbar.css");
+@import url("componens/card.css");
+@import url("componens/hero.css");
+@import url("componens/team.css");

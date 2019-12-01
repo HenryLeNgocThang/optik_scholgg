@@ -1,0 +1,147 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+html body h1 {
+  font-size: 35px;
+  font-weight: 300;
+  color: #c63cd6;
+}
+
+html body h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+html body h3 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+html body p,
+html body li,
+html body a,
+html body span,
+html body td {
+  font-size: 18px;
+}
+
+html body a {
+  text-decoration: none;
+}
+
+html body textarea {
+  resize: none;
+}
+
+html body th {
+  font-size: 20px;
+}
+
+.button {
+  padding: 15px;
+  border: 3px solid white;
+  transition: all .2s ease-in-out;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: white;
+  color: black;
+}
+
+@media (max-width: 480px) {
+  html body h1 {
+    font-size: 25px;
+  }
+
+  html body h2 {
+    font-size: 20px;
+  }
+
+  html body h3 {
+    font-size: 16px;
+  }
+
+  html body p,
+  html body li,
+  html body a,
+  html body span,
+  html body td {
+    font-size: 12px;
+  }
+
+  html body th {
+    font-size: 12px;
+  }
+
+  .button {
+    padding: 5px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  html body h1 {
+    font-size: 29px;
+  }
+
+  html body h2 {
+    font-size: 24px;
+  }
+
+  html body h3 {
+    font-size: 19px;
+  }
+
+  html body p,
+  html body li,
+  html body a,
+  html body span,
+  html body td {
+    font-size: 14px;
+  }
+
+  html body th {
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  html body h1 {
+    font-size: 33px;
+  }
+
+  html body h2 {
+    font-size: 28px;
+  }
+
+  html body h3 {
+    font-size: 23px;
+  }
+
+  html body p,
+  html body li,
+  html body a,
+  html body span,
+  html body td {
+    font-size: 16px;
+  }
+
+  html body th {
+    font-size: 18px;
+  }
+
+  .button {
+    padding: 15px;
+  }
+}

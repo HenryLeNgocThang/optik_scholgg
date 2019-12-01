@@ -1,0 +1,125 @@
+﻿#navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#navbar #navbar-button {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    height: 40px;
+    width: 50px;
+    cursor: pointer;
+    margin: 0;
+    z-index: 103;
+    opacity: 0;
+}
+
+#navbar #navbar-button:checked ~ #navbar-content {
+    left: 0;
+}
+
+#navbar #navbar-button-icon {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    z-index: 102;
+    background: #333;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+}
+
+#navbar #navbar-button-icon span {
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 3px;
+    background: #fff;
+    transition: all .3s ease-in-out;
+}
+
+#navbar #navbar-button:checked ~ #navbar-button-icon span {
+    background: #f00;
+    transform-origin: 15%;
+}
+
+#navbar #navbar-button:checked ~ #navbar-button-icon span:first-child {
+    transform: rotateZ(45deg);
+}
+
+#navbar #navbar-button:checked ~ #navbar-button-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+#navbar #navbar-button:checked ~ #navbar-button-icon span:last-child {
+    transform: rotateZ(-45deg);
+}
+
+#navbar #navbar-content {
+    position: absolute;
+    padding: 100px 0;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background: #333;
+    z-index: 101;
+    transition: all .3s ease-in-out;
+}
+
+#navbar #navbar-content img {
+    width: 150px;
+    margin-left: 14px;
+}
+
+#navbar #navbar-content ul#navbar-menu {
+    list-style-type: none;
+    margin: 25px 0 0;
+    padding: 0;
+    height: auto;
+}
+
+#navbar #navbar-content ul#navbar-menu li:first-child {
+    border-top: 2px solid #c63cd6;
+}
+
+#navbar #navbar-content ul#navbar-menu li {
+    border-bottom: 2px solid #c63cd6;
+}
+
+#navbar #navbar-content ul#navbar-menu li a {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #c63cd6;
+    font-size: 23px;
+    transition: all .3s ease-in-out;
+}
+
+#navbar #navbar-content ul#navbar-menu li a:hover {
+    color: #ffffff;
+    padding-left: 30px;
+}
+
+#navbar #navbar-content ul#navbar-menu li a:after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 0;
+    height: 100%;
+    background: #c63cd6;
+    transition: all .3s ease-in-out;
+}
+
+#navbar #navbar-content ul#navbar-menu li a:hover:after {
+    width: 100%;
+}

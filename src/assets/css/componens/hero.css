@@ -1,0 +1,128 @@
+.parallax-container {
+    position: relative;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.parallax-container .parallax-content {
+    position: relative;
+    display: block;
+    background-color: white;
+    z-index: 1;
+}
+
+.parallax-container #hero.parallax-hero {
+    display: flex;
+    position: relative;
+    left: -9px;
+    z-index: -1;
+    height: 100vh;
+    transform: translateZ(-1px) scale(2);
+    background: #333333 url(../../img/hero-background.jpg) center no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .parallax-container #hero.parallax-hero {
+        left: 0px;
+    }
+}
+
+#hero {
+    position: relative;
+}
+
+#hero [class*="col-"] {
+    height: auto;
+}
+
+#hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, rgba(198, 60, 214, 0.7), rgba(255, 255, 255, 0), rgba(57, 55, 230, 0.7));
+}
+
+#hero h1 {
+    font-size: 70px;
+    font-weight: bolder;
+    color: #fff;
+    position: relative;
+    width: auto;
+    background: rgba(0, 0, 0, .5);
+    display: inline-block;
+    margin: 0;
+    padding: 20px;
+}
+
+#hero h2 {
+    color: #fff;
+    position: relative;
+    width: auto;
+    background: rgba(0, 0, 0, .5);
+    display: inline-block;
+    margin: 0;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 50px;
+    }
+}
+
+#hero #hero-button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 5%;
+    display: inline-block;
+    margin-top: 15px;
+    width: 200px;
+    height: 55px;
+    font-size: 25px;
+    line-height: 55px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#hero #hero-button svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#hero #hero-button svg rect {
+    stroke: #000;
+    stroke-width: 5;
+    stroke-dasharray: 322, 0;
+    stroke-dashoffset: 0;
+    transition: all .4s ease-out;
+}
+
+#hero #hero-button:hover {
+    color: #f00;
+}
+
+#hero #hero-button:hover svg rect {
+    stroke: #f00;
+    stroke-width: 7;
+    /* stroke-dasharray: 80, 400;
+    stroke-dashoffset: 170; */
+    stroke-dasharray: 70, 180;
+    stroke-dashoffset: 30;
+}

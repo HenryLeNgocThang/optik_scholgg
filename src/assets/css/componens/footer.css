@@ -1,0 +1,27 @@
+﻿#footer {
+    background: #333;
+}
+
+#footer .footer-content {
+
+}
+
+#footer .footer-content ul {
+    margin: 0;
+    padding: 0;
+}
+
+#footer .footer-content ul li {
+    list-style-type: none;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+}
+
+#footer .footer-content ul li:last-child {
+    float: right;
+}
+
+#footer .footer-content ul li a {
+    color: rgb(255, 255, 255);
+    margin: 0 20px;
+}
