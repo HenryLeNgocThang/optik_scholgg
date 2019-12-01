@@ -9,8 +9,9 @@
     position: absolute;
     left: 25px;
     top: 25px;
-    height: 40px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
+    padding: 15px 10px;
     cursor: pointer;
     margin: 0;
     z-index: 103;
@@ -38,16 +39,25 @@
 
 #navbar #navbar-button-icon span {
     display: block;
-    width: 100%;
     margin: auto;
-    height: 3px;
+    width: 70%;
+    height: 2px;
     background: #fff;
     transition: all .3s ease-in-out;
+}
+
+#navbar #navbar-button-icon span:nth-child(2) {
+    width: 85%;
+}
+
+#navbar #navbar-button:hover ~ #navbar-button-icon span {
+    width: 100%;
 }
 
 #navbar #navbar-button:checked ~ #navbar-button-icon span {
     background: #f00;
     transform-origin: 15%;
+    width: 100%;
 }
 
 #navbar #navbar-button:checked ~ #navbar-button-icon span:first-child {
@@ -96,7 +106,7 @@
 #navbar #navbar-content ul#navbar-menu li a {
     position: relative;
     display: block;
-    padding: 10px 20px;
+    padding: 10px 0 10px 20px;
     color: #c63cd6;
     font-size: 23px;
     transition: all .3s ease-in-out;
@@ -114,9 +124,9 @@
     left: 0;
     content: '';
     display: block;
-    width: 0;
     height: 100%;
     background: #c63cd6;
+    width: 0;
     transition: all .3s ease-in-out;
 }
 
