@@ -23,7 +23,7 @@
     z-index: -1;
     height: 100vh;
     transform: translateZ(-1px) scale(2);
-    background: #333333 url(../../img/hero-background.jpg) center no-repeat;
+    background: #333333 url("../../img/hero-background.jpg") center no-repeat;
     background-size: cover;
 }
 

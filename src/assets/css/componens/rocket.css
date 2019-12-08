@@ -1,0 +1,74 @@
+#rocket {
+    display: block;
+    position: sticky;
+    top: calc(100vh - 100px);
+    width: 50px;
+    height: auto;
+    margin: 0;
+    padding: 20px 0 0;
+    float: right;
+    margin-right: 30px;
+    transform: rotateZ(-45deg);
+    animation: paused linear infinite;
+}
+
+#rocket:hover {
+    animation-name: rocketHoverAnimation;
+    animation-play-state: running;
+    animation-duration: .2s;
+}
+
+#rocket #rocket-logo:before {
+    content: "\f135";
+    font-family: "FontAwesome";
+    font-size: 40px;
+    color: #fff;
+}
+
+@keyframes rocketHoverAnimation {
+    0% {
+        top: calc(100vh - 96px);
+        margin-right: 33px;
+    }
+
+    20% {
+        top: calc(100vh - 103px);
+        margin-right: 27px;
+    }
+
+    40% {
+        top: calc(100vh - 100px);
+        margin-right: 33px;
+    }
+
+    60% {
+        top: calc(100vh - 100px);
+        margin-right: 27px;
+    }
+
+    80% {
+        top: calc(100vh - 103px);
+        margin-right: 33px;
+    }
+
+    100% {
+        top: calc(100vh - 96px);
+        margin-right: 27px;
+    }
+}
+
+@media (max-width: 480px) {
+    #rocket #rocket-logo {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    #rocket #rocket-logo {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
