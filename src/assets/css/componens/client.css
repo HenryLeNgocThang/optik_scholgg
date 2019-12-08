@@ -1,6 +1,24 @@
 #clients {
-    background: #333;
     height: auto;
     width: 100%;
     margin-top: 40px;
+}
+
+#clients .client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto;
+}
+
+#clients .client-logos .client-logo {
+    flex: 20%;
+    height: auto;
+    padding: 20px;
+}
+
+#clients .client-logos .client-logo img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
 }

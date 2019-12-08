@@ -10,7 +10,9 @@
 .parallax-container .parallax-content {
     position: relative;
     display: block;
-    background-color: white;
+    background: #000 url("../../img/background-1.jpg") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     z-index: 1;
 }
 
