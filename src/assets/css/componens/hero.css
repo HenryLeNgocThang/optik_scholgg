@@ -50,7 +50,7 @@
 }
 
 #hero h1 {
-    font-size: 70px;
+    font-size: 130px;
     font-weight: bolder;
     color: #fff;
     position: relative;
@@ -59,6 +59,27 @@
     display: inline-block;
     margin: 0;
     padding: 20px;
+    text-shadow: 4px 4px 0 rgb(198, 60, 214), -4px -4px 0 rgb(57, 55, 230), -4px 4px 0 #f00;
+    letter-spacing: 4px;
+    animation: heroHeadlineAnimation 4s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+
+@keyframes heroHeadlineAnimation {
+    0% {
+        text-shadow: 4px 4px 0 rgb(198, 60, 214), -4px -4px 0 rgb(57, 55, 230), -4px 4px 0 #f00;
+    }
+
+    33% {
+        text-shadow: 4px 4px 0 rgb(57, 55, 230), -4px -4px 0 #f00, -4px 4px 0 rgb(198, 60, 214);
+    }
+
+    66% {
+        text-shadow: 4px 4px 0 #f00, -4px -4px 0 rgb(198, 60, 214), -4px 4px 0 rgb(57, 55, 230);
+    }
+
+    100% {
+        text-shadow: 4px 4px 0 rgb(198, 60, 214), -4px -4px 0 rgb(57, 55, 230), -4px 4px 0 #f00;
+    }
 }
 
 #hero h2 {
@@ -121,8 +142,6 @@
 #hero #hero-button:hover svg rect {
     stroke: #f00;
     stroke-width: 7;
-    /* stroke-dasharray: 80, 400;
-    stroke-dashoffset: 170; */
     stroke-dasharray: 70, 180;
     stroke-dashoffset: 30;
 }

@@ -1,0 +1,51 @@
+#about-us .about-logo {
+    width: 160px;
+    height: 160px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 40px;
+    position: relative;
+    transform: rotateZ(-20deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-us .about-logo img {
+    width: 100%;
+    height: auto;
+}
+
+#about-us .about-logo:after,
+#about-us .about-logo:before  {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    transform: rotateZ(45deg);
+}
+
+#about-us .about-logo:after {
+    background: #c63cd6;
+    animation: after-rotate 2s cubic-bezier(.66, -.7, .27, 1.6) infinite;
+}
+
+#about-us .about-logo:before {
+    background: rgba(57, 55, 230, 1);
+    animation: before-rotate 2s cubic-bezier(0.66, -0.7, 0.5, 1.6) infinite;
+}
+
+@keyframes after-rotate {
+    to {
+        transform: rotate(225deg);
+    }
+}
+
+@keyframes before-rotate {
+    to {
+        transform: rotate(135deg);
+    }
+}
