@@ -13,3 +13,17 @@
 @import url("componens/team.css");
 @import url("componens/client.css");
 @import url("componens/rocket.css");
+@import url("componens/contact.css");
+
+::-webkit-scrollbar {
+    width: 18px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(-45deg, rgba(57, 55, 230, 1), rgba(198, 60, 214, 1));
+    border-radius: 4px;
+}

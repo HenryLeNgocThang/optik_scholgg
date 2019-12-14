@@ -16,10 +16,6 @@
     height: auto;
 }
 
-#about-us p {
-    color: #fff;
-}
-
 #about-us .about-logo:after,
 #about-us .about-logo:before  {
     content: '';

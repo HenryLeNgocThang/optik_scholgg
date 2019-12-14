@@ -20,6 +20,12 @@
     background: #fff;
     border-radius: 4px;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+    transition: all .3s ease-in-out;
+}
+
+#clients .client-logos .client-logo img:hover {
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
 }
 
 #clients .client-logos .client-logo:first-child img:nth-child(3n) {

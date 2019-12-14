@@ -1,0 +1,41 @@
+
+#contact {
+
+}
+
+#contact .contact-form {
+    
+}
+
+#contact .contact-form input {
+    width: 100%;
+    padding: 10px;
+}
+
+#contact .contact-form input.button {
+    background: #fff;
+    border: none;
+    color: #c63cd6;
+}
+
+#contact .contact-form input.button:hover {
+    background: linear-gradient(-45deg, rgba(57, 55, 230, 1), rgba(198, 60, 214, 1));
+    background-size: 200% 200%;
+    animation: sendButtonAnimation 4s ease-in-out infinite;
+    transform-origin: center;
+    color: #fff;
+}
+
+@keyframes sendButtonAnimation {
+    0% {
+        background-position: left;
+    }
+
+    50% {
+        background-position: right;
+    }
+
+    100% {
+        background-position: left;
+    }
+}
