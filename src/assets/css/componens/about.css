@@ -1,3 +1,7 @@
+#about-us {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
+}
+
 #about-us .about-logo {
     width: 160px;
     height: 160px;

@@ -111,6 +111,11 @@ WICHTIGE BREAKPOINTS!
     width: 100%;
     height: 100%;
   }
+
+  .col-4 {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -127,6 +132,11 @@ WICHTIGE BREAKPOINTS!
     height: 100%;
   }
   .col-3 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .col-4 {
     width: 100%;
     height: 100%;
   }

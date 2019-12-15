@@ -1,15 +1,38 @@
-
 #contact {
+    padding-bottom: 60px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
+}
 
+#contact a {
+    color: #c63cd6;
+    transition: all .3s ease-in-out;
+}
+
+#contact a:hover {
+    color: #fff;
 }
 
 #contact .contact-form {
-    
+    margin-top: 18px;
 }
 
-#contact .contact-form input {
+#contact .contact-form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
     width: 100%;
     padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+#contact .contact-form textarea {
+    height: 150px;
 }
 
 #contact .contact-form input.button {
@@ -38,4 +61,65 @@
     100% {
         background-position: left;
     }
+}
+
+#contact ul.contact-socialmedia {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: block;
+}
+
+#contact ul.contact-socialmedia li {
+    width: 30px;
+    margin: 20px 0;
+}
+
+#contact ul.contact-socialmedia li a i.fa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    #contact ul.contact-socialmedia {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact ul.contact-socialmedia {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+#contact ul.contact-socialmedia li a i.fa-facebook {
+    background: #4267B2;
+    color: #fff;
+}
+
+.fa-facebook:before {
+    margin-top: 2px;
+}
+
+#contact ul.contact-socialmedia li a i.fa-twitter {
+    background: #1DA1F2;
+    color: #fff;
+}
+
+#contact ul.contact-socialmedia li a i.fa-youtube-play {
+    color: #FF0000;
+    background: #fff;
+}
+
+#contact ul.contact-socialmedia li a i.fa-instagram {
+    color: #fff;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
